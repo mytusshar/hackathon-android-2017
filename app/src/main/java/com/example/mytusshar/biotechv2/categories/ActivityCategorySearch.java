@@ -194,12 +194,17 @@ public class ActivityCategorySearch extends AppCompatActivity implements SearchV
             ch = "a";
         ///////////////////////////
         Toast.makeText(this, "char : " + ch, Toast.LENGTH_SHORT).show();
-        String jsonString =
-                        " {\n" +
-                        "  \"searchKey\"" + ":" + "\"" + query + "\"" + ",\n" +
-                        "  \"fieldId\"" + ":" + "\"" + areaId + "\"" + ",\n" +
-                        "  \"type\"" + ":" + "\"" + ch +"\"" + "\n" +
-                        " }\n";
+        String jsonString = " {\n" +
+                "  \"searchKey\"" + ":" + "\"" + query + "\"" + ",\n" +
+                "  \"fieldId\"" + ":"  + 0 + ",\n" +
+                "  \"type\"" + ":" + "\"g\"" + "\n" +
+                " }\n";
+//                        " {\n" +
+//                        "  \"searchKey\"" + ":" + "\"" + query + "\"" + ",\n" +
+//                        "  \"fieldId\"" + ":" + "\"" + 0 + "\"" + ",\n" +
+//                        "  \"type\"" + ":" + "\"" + '' +"\"" + "\n" +
+//                        " }\n";
+
 
         Volley.newRequestQueue(this).add(
                 new JsonRequest<JSONArray>(Request.Method.POST, AppConfig.URL_SEARCH, jsonString,
@@ -456,9 +461,7 @@ public class ActivityCategorySearch extends AppCompatActivity implements SearchV
     @Override
     protected void onStop() {
         super.onStop();
-
     }
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 }
