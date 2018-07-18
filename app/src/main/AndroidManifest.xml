@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mytusshar.biotechv2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="BioTech"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ActivityMain"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".categories.ActivitySubCategory"/>
+        <activity android:name=".profile_like_playlist.ActivitySharedVideos"/>
+        <activity android:name=".categories.ActivityCategorySearch"/>
+        <activity android:name=".video_players.ActivityVideoPlayer"/>
+        <activity android:name=".video_players.ActivityYoutubePlayer"/>
+        <activity android:name=".ActivitySplash"/>
+        <activity android:name=".ActivityDetails"
+            android:label="App Details"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ActivitySetting"
+            android:label="Setting"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".search_utils.SearchActivity"/>
+        <activity android:name=".signin_pkg.ActivityLogin" />
+        <activity android:name=".signin_pkg.ActivityRegister"/>
+        <activity android:name=".profile_like_playlist.ActivityLiked"
+            android:label="Liked Videos"/>
+        <activity android:name=".profile_like_playlist.ActivityPlaylist"
+            android:label="Watch Later"
+            android:theme="@style/AppTheme"/>
+
+
+    </application>
+
+</manifest>

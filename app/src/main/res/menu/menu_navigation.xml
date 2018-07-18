@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+     <!--   <item
+            android:id="@+id/nav_recent"
+            android:title="Recent"
+            android:icon="@drawable/ic_home"/>
+    -->
+        <item
+            android:id="@+id/nav_playlist"
+            android:title="Playlist"
+            android:icon="@drawable/playlist_icon"/>
+
+        <item
+            android:id="@+id/nav_likedlist"
+            android:title="Liked Videos"
+            android:icon="@drawable/liked_icon"/>
+
+        <item
+            android:id="@+id/nav_sharedlist"
+            android:title="Shared With Me"
+            android:icon="@drawable/share_icon"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings"
+            android:icon="@drawable/setting_icon"/>
+
+        <item
+            android:id="@+id/nav_details"
+            android:title="Details"
+            android:icon="@drawable/about_icon"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon"/>
+    </group>
+</menu>
