@@ -3,9 +3,9 @@ package com.example.mytusshar.biotechv2.application_config;
 
 public class AppConfig {
 
-    public static String LOCAL_HOST = "http://192.168.43.213:8090";
+    public static String LOCAL_HOST = "http://192.168.43.209:8090";
 
-    public static String LOCAL_PREVIEW = "http://192.168.43.213/";
+    public static String LOCAL_PREVIEW = "http://192.168.43.209/";
 
     public static String URL_GET_VIDEO_DATA = LOCAL_HOST + "/video/";
 
